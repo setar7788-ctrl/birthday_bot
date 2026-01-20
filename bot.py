@@ -14,7 +14,7 @@ from telegram.ext import (
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # === КОНФИГУРАЦИЯ ===
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # Замени на свой токен
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 USERS_DIR = "users"  # Папка со списками ДР
 SESSIONS_FILE = "sessions.json"  # Файл сессий (chat_id пользователей)
 
